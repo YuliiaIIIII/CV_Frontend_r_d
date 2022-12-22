@@ -28,16 +28,16 @@
       <legend>Contact form</legend>
       <table>
         <tr align="left">
-          <td>E-mail*: </td>
-          <td><input type="email" name="email" required placeholder="Enter your e-mail"></td>
+          <td><label for="email-input">E-mail*: </label></td>
+          <td><input type="email" id="email-input" name="email" required placeholder="Enter your e-mail"></td>
         </tr>
         <tr align="left">
-          <td valign="top">Description: </td>
-          <td><textarea name="textarea" rows="5" cols="20"></textarea></td>
+          <td valign="top"><label for="description-field">Description: </label></td>
+          <td><textarea name="textarea" id="description-field" rows="5" cols="20"></textarea></td>
         </tr>
         <tr align="left">
-          <td>Work-type: </td>
-          <td><select name="selection" id="">
+          <td><label for="work-type">Work-type: </label></td>
+          <td><select name="selection" id="work-type">
             <option value="option1">Full-time</option>
             <option value="option2">Remote</option>
             <option value="option3">One-time project</option>

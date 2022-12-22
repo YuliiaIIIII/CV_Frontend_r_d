@@ -1,0 +1,28 @@
+body{
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  font-style: italic;
+}
+h3{
+  font-weight: bold;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+a:link{
+  color: #00f;
+  text-decoration: underline;
+}
+a:visited{
+  color: #005;
+  text-decoration: underline;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.listDecoration{
+  list-style-type: square;
+}

@@ -2,14 +2,26 @@ body{
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
 }
+.wrapper{
+  border-bottom: 1px solid rgb(58, 191, 158);
+}
+.img-wrapper{
+  
+  padding: 10px;
+  border: 2px solid rgb(58, 191, 158); 
+}
 h1{
   font-style: italic;
 }
 h3{
   font-weight: bold;
 }
+table{
+  background-color: rgb(242, 242, 242);
+}
 .uppercase{
   text-transform: uppercase;
+  background-color: rgb(161, 191, 235);
 }
 a:link{
   color: #00f;

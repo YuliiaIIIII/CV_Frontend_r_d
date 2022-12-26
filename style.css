@@ -3,12 +3,11 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper{
-  border-bottom: 1px solid rgb(58, 191, 158);
+  border-bottom: 1px solid rgb(38, 183, 171);
 }
-.img-wrapper{
-  
+img{
   padding: 10px;
-  border: 2px solid rgb(58, 191, 158); 
+  border: 2px solid rgb(43, 173, 196); 
 }
 h1{
   font-style: italic;

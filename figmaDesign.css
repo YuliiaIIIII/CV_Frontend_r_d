@@ -26,17 +26,7 @@
     border-bottom: 5px solid black;
     padding-bottom: 28px;
 }
-.title,
-.list1,
-.list2,
-.profile-name,
-.surname,
-.profile-position,
-.InfoTitle,
-.lang,
-.summary-description,
-.bold-text,
-.textBold{
+.fw600{
     font-weight: 600;
 }
 .profile-name,
@@ -94,7 +84,6 @@ p,
 .surname{
     color: #1C2E8C;
     font-size: 40px;
-    
 }
 img{
     width: 100%;
@@ -148,7 +137,9 @@ a:hover{
     font-size: 18px;
 }
 .summary-description,
-.text16{
+.firstEd>p,
+.secondEd>p,
+.thirdEd>p{
     font-size: 16px; 
  }
 .summary-description{

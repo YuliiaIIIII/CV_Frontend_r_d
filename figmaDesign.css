@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 .general{
     margin: 0 auto;
@@ -22,36 +21,27 @@
 }
 .title{
     color: #1E1E1E;
-    font-weight: 600;
     font-size: 36px;
     width: 659px;
     border-bottom: 5px solid black;
     padding-bottom: 28px;
 }
-.summary-description{
+.title,
+.list1,
+.list2,
+.profile-name,
+.surname,
+.profile-position,
+.InfoTitle,
+.lang,
+.summary-description,
+.bold-text,
+.textBold{
     font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #263036;
-}
-img{
-    width: 100%;
-    height: 100%;
 }
 .profile-name,
 .summary-title{
     margin-top: 58px;
-}
-.profile-name{
-    color: white;
-    font-size: 40px;
-    font-weight: 600;
-    padding: 0 0 36px 40px;
-}
-.surname{
-    color: #1C2E8C;
-    font-size: 40px;
-    font-weight: 600;
 }
 .summary,
 .skills,
@@ -66,7 +56,6 @@ p{
 p,
 .list1,
 .list2{
-    
     color: #000000;
 }
 .summary-description,
@@ -76,30 +65,47 @@ p,
 .allEducation{
     margin: 28px 0 49px;
 }
-.list1,
-.list2{
-    display: inline-block;
-    margin-right: 50px;
-    font-weight: 600;
-}
-
-.bold-text{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.listDecoration{
-    list-style-position: inside;
-}
 .grid-contacts,
 .InfoTitle,
 .position{
     margin-left: 41px;
 }
+.firstEd,
+.secondEd,
+.thirdEd,
+.lastJob{
+    margin-bottom: 20px;
+}
+.position{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.list1,
+.list2{
+    display: inline-block;
+    margin-right: 50px;
+}
+.profile-name{
+    color: white;
+    font-size: 40px;
+    
+    padding: 0 0 36px 40px;
+}
+.surname{
+    color: #1C2E8C;
+    font-size: 40px;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.profile-position{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
 .InfoTitle{
     width: 289px;
-    font-weight: 600;
     font-size: 32px;
     line-height: 39px;
     color: #263036;
@@ -107,7 +113,6 @@ p,
     margin-bottom: 23px;
     padding-bottom: 15px;
 }
-
 .contactInfo{
     display: grid;
     grid-template-columns: 1fr;
@@ -118,7 +123,6 @@ p,
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 29px;
-    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     row-gap: 15px;
@@ -127,18 +131,8 @@ p,
 :nth-child(3).lang{
     margin-bottom: 20px;
 }
-.position{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.profile-position{
-    margin-bottom: 20px;
-    font-size: 2em;
-    font-weight: 600;
-}
 .blueText{
     color: #1C2E8C;
-
 }
 a:link{
     color: #1C2E8C;
@@ -153,16 +147,18 @@ a:hover{
     text-decoration: none;
     font-size: 18px;
 }
-.firstEd,
-.secondEd,
-.thirdEd,
-.lastJob{
-    margin-bottom: 20px;
-}
-.textBold{
-    font-weight: 600;
-    
-}
+.summary-description,
 .text16{
-   font-size: 16px; 
+    font-size: 16px; 
+ }
+.summary-description{
+    line-height: 19px;
+    color: #263036;
+}
+.listDecoration{
+    list-style-position: inside;
+}
+.bold-text{
+    font-size: 14px;
+    line-height: 17px;
 }

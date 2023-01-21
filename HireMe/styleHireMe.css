@@ -18,25 +18,20 @@ textarea{
     appearance: none;
     margin: .5rem 0 0 0;
     padding: .5rem .5rem;
+    width: 20rem;
     border: none;
     font-size: 1rem;
     display: block;
     background-color: rgb(240, 240, 240);
     border-radius: 6px;
 }
+textarea,
+input[type="email"]{
+    margin-bottom: .5rem;
+}
 .textType{
     font-family: Arial, Helvetica, sans-serif;
 }
-input,
-textarea,
-select{
-    width: 20rem;
-}
-select{
-    background: rgb(240, 240, 240) url('../arrow.png') no-repeat center right .75rem;
-    background-size: 4%;
-}
-option
 fieldset{
     border: 2px solid black;
 }
@@ -47,15 +42,22 @@ legend{
 p{
     color: red;
 }
+p{
+    margin: .2rem 0 0;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
 input::placeholder,
 textarea::placeholder{
     color: rgba(0, 0, 0, 0.295);
     font-family: Arial, Helvetica, sans-serif;
 }
-input:optional {
-    border: 3px dotted rgb(247, 216, 65);
-   
-  }
+select{
+    background: rgb(240, 240, 240) url('../arrow.png') no-repeat center right .75rem;
+    background-size: 4%;
+}
+
 input:invalid,
 textarea:invalid{
     outline: none;
@@ -64,24 +66,16 @@ textarea:invalid{
 }
 input:focus,
 textarea:focus,
-select:focus {
+select:focus{
     outline: none;
     border: 1px solid rgb(43, 43, 199);
     border-radius: 6px;
-}
-p{
-    margin: .2rem 0 0;
-    font-size: .8rem;
-    margin-bottom: 1rem;
 }
 input:valid,
 textarea:valid{
     outline: none;
     border: 1px solid rgb(1, 104, 4);
     border-radius: 6px;
-}
-select:valid{
-    border: none;
 }
 .error,
 .success{
@@ -90,11 +84,12 @@ select:valid{
 .error{
     color: red;
 }
+
+input[type="email"]:invalid + .error{
+    display: block;
+}
 .success{
     color: rgb(1, 104, 4);
-}
-input[type="email"]:required + .error{
-    display: block;
 }
 input[type="email"]:valid + .success{
     display: block;
@@ -108,8 +103,11 @@ input[type="submit"]{
     color: rgb(43, 43, 199);
     background-color: white;
 }
-
 input[type="submit"]:hover{
-   
     background-color: rgb(226, 240, 248);
+}
+input[type="submit"]:focus{
+    outline: none;
+    background: rgb(43, 43, 199);
+    color: #fff;
 }

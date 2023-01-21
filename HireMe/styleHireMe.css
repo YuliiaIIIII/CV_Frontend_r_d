@@ -33,7 +33,7 @@ select{
     width: 20rem;
 }
 select{
-    background: url('../arrow.png') no-repeat center right .75rem;
+    background: rgb(240, 240, 240) url('../arrow.png') no-repeat center right .75rem;
     background-size: 4%;
 }
 option
@@ -70,7 +70,7 @@ select:focus {
     border-radius: 6px;
 }
 p{
-    margin: 0 0;
+    margin: .2rem 0 0;
     font-size: .8rem;
     margin-bottom: 1rem;
 }
@@ -80,7 +80,9 @@ textarea:valid{
     border: 1px solid rgb(1, 104, 4);
     border-radius: 6px;
 }
-
+select:valid{
+    border: none;
+}
 .error,
 .success{
     display: none;

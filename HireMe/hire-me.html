@@ -4,58 +4,66 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styleHireMe.css">
+  <link rel="stylesheet" href="hire-me-position.css">
   <title>Hire me</title>
 </head>
 <body>
-  <h1>Offer a job</h1>
-  <table class="borders">
-    <thead>
-      <tr class="borders">
-        <th>Phone: </th>
-        <td>+38 095 797 35 47</td>
-      </tr>
-    </thead>
-    <tbody>
-       <tr class="borders">
-        <th>Adress: </th>
-        <td>Kyiv, Ukraine</td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <form action="">
-    <fieldset class="textType">
-      <legend>Contact form</legend>
-        <label for="email-input">E-mail <span class="pointRed">*</span> </label>
-        <input 
-        id = email-input
-        class="email-input" 
-        type="email" 
-        name="email-input" 
-        required 
-        placeholder="Enter your e-mail"/>
-        <p class="error">Enter a correct e-mail</p>
-        <p class="success">Success message</p>
+  <div class="wrapper">
+    <div class="infoBlock">
+      <h1>Offer a job</h1>
+      <table class="borders">
+        <thead>
+          <tr class="borders">
+            <th>Phone: </th>
+            <td>+38 095 797 35 47</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="borders">
+            <th>Adress: </th>
+            <td>Kyiv, Ukraine</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
 
-        <label for="description-field">Description </label>
-        <textarea 
-        class="textType" 
-        name="textarea" 
-        required 
-        id="description-field" 
-        placeholder="Type your text here"></textarea>
-        
-        <label for="work-type">Work-type </label>
-         <select name="selection" id="work-type" required>
-            <option value=""></option>
-            <option value="option1">Full-time</option>
-            <option value="option2">Remote</option>
-            <option value="option3">One-time project</option>
-        </select>
+    <div class="formBlock">
+      <form action="">
+        <fieldset class="textType">
+          <legend>Contact form</legend>
+            <label for="email-input">E-mail <span class="pointRed">*</span> </label>
+            <input 
+            id = email-input
+            class="email-input" 
+            type="email" 
+            name="email-input" 
+            required 
+            placeholder="Enter your e-mail"/>
+            <p class="error">Enter a correct e-mail</p>
+            <p class="success">Success message</p>
+    
+            <label for="description-field">Description </label>
+            <textarea 
+            class="textType" 
+            name="textarea" 
+            required 
+            id="description-field" 
+            placeholder="Type your text here"></textarea>
+            
+            <label for="work-type">Work-type </label>
+             <select name="selection" id="work-type" required>
+                <option value=""></option>
+                <option value="option1">Full-time</option>
+                <option value="option2">Remote</option>
+                <option value="option3">One-time project</option>
+            </select>
 
-    </fieldset>
-    <input type="submit" value="Hire me">
-  </form>
+        </fieldset>
+        <input type="submit" value="Hire me">
+      </form>
+    </div>
+  </div>
+  
 </body>
 </html>

@@ -4,51 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hire-me-position.css">
   <title>Hire me</title>
 </head>
 <body>
-  <h1>Offer a job</h1>
-  <table border="1" cellspacing="0" cellpadding="5px">
-    <thead>
-      <tr>
-        <th>Phone: </th>
-        <td>+38 095 797 35 47</td>
-      </tr>
-    </thead>
-    <tbody>
-       <tr>
-        <th>Adress: </th>
-        <td>Kyiv, Ukraine</td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <form action="">
-    <fieldset>
-      <legend>Contact form</legend>
-      <table>
-        <tr align="left">
-          <td><label for="email-input">E-mail*: </label></td>
-          <td><input type="email" id="email-input" name="email" required placeholder="Enter your e-mail"></td>
-        </tr>
-        <tr align="left">
-          <td valign="top"><label for="description-field">Description: </label></td>
-          <td><textarea name="textarea" id="description-field" rows="5" cols="20"></textarea></td>
-        </tr>
-        <tr align="left">
-          <td><label for="work-type">Work-type: </label></td>
-          <td><select name="selection" id="work-type">
-            <option value="option1">Full-time</option>
-            <option value="option2">Remote</option>
-            <option value="option3">One-time project</option>
-          </th>
-        </tr>
+  <div class="wrapper">
+    <div class="infoBlock">
+      <h1>Offer a job</h1>
+      <table border="1" cellspacing="0" cellpadding="5px">
+        <thead>
+          <tr>
+            <th>Phone: </th>
+            <td>+38 095 797 35 47</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Adress: </th>
+            <td>Kyiv, Ukraine</td>
+          </tr>
+        </tbody>
       </table>
-        <br />
-          <input type="submit" value="Hire me">
-        </select>
-    </fieldset>
-    
-  </form>
+    </div>
+  <br />
+
+    <div class="formBlock">
+      <form action="">
+        <fieldset>
+          <legend>Contact form</legend>
+          <table>
+            <tr align="left">
+              <td><label for="email-input">E-mail*: </label></td>
+              <td><input type="email" id="email-input" name="email" required placeholder="Enter your e-mail"></td>
+            </tr>
+            <tr align="left">
+              <td valign="top"><label for="description-field">Description: </label></td>
+              <td><textarea name="textarea" id="description-field" rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr align="left">
+              <td><label for="work-type">Work-type: </label></td>
+              <td><select name="selection" id="work-type">
+                <option value="option1">Full-time</option>
+                <option value="option2">Remote</option>
+                <option value="option3">One-time project</option>
+              </th>
+            </tr>
+          </table>
+            <br />
+              <input type="submit" value="Hire me">
+            </select>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  
 </body>
 </html>

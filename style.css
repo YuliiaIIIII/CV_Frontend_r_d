@@ -7,10 +7,30 @@
 .general{
     margin: 0 auto;
     width: 1200px;
-    /* position: relative; */
+}
+.profile-name,
+.summary-title{
+    margin-top: 58px;
+}
+.fw600{
+    font-weight: 600;
+}
+.wml55{
+    width: 706px;
+    margin-left: 55px;
+}
+.marg2849{
+    margin: 28px 0 49px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+p{
+    font-size: 14px;
 }
 .wrapper-left{
     position: fixed;
+    z-index: -1;
     width: 30%;
     height: 100%;
     overflow-y: scroll;
@@ -30,45 +50,15 @@
     border-bottom: 5px solid black;
     padding-bottom: 28px;
 }
-.fw600{
-    font-weight: 600;
-}
-.profile-name,
-.summary-title{
-    margin-top: 58px;
-}
-.summary,
-.skills,
-.work-exp,
-.education{
-    width: 706px;
-    margin-left: 55px;
-}
-p{
-    font-size: 14px;
-}
 p,
 .list1,
 .list2{
     color: #000000;
 }
-.summary-description,
-.list1,
-.list2,
-.allExperience,
-.allEducation{
-    margin: 28px 0 49px;
-}
 .grid-contacts,
 .InfoTitle,
 .position{
     margin-left: 41px;
-}
-.firstEd,
-.secondEd,
-.thirdEd,
-.lastJob{
-    margin-bottom: 20px;
 }
 .position{
     margin-top: 25px;
@@ -82,7 +72,6 @@ p,
 .profile-name{
     color: white;
     font-size: 40px;
-    
     padding: 0 0 36px 40px;
 }
 .surname{
@@ -141,9 +130,7 @@ a:hover{
     font-size: 18px;
 }
 .summary-description,
-.firstEd>p,
-.secondEd>p,
-.thirdEd>p{
+.fs16>p{
     font-size: 16px; 
  }
 .summary-description{

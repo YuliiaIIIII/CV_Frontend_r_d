@@ -7,20 +7,21 @@
 .general{
     margin: 0 auto;
     width: 1200px;
+    /* position: relative; */
 }
 .wrapper-left{
+    position: fixed;
     width: 30%;
+    height: 100%;
+    overflow-y: scroll;
     float: left;
     background-color: #86A3B4;
     border: 1px solid #1E1E1E;
 }
-img{
-  padding: 10px;
-  border: 2px solid rgb(43, 173, 196);
-  width: 100px;
-  height: 100px;
-  display: inline;
-  float: right;
+.wrapper-right{
+    width: 70%;
+    float: right;
+    background-color: white;
 }
 .title{
     color: #1E1E1E;
@@ -33,9 +34,35 @@ img{
     font-weight: 600;
 }
 .profile-name,
-.profile-position,
-.bottom-line{
-  border-bottom: 1px solid rgb(38, 183, 171);
+.summary-title{
+    margin-top: 58px;
+}
+.summary,
+.skills,
+.work-exp,
+.education{
+    width: 706px;
+    margin-left: 55px;
+}
+p{
+    font-size: 14px;
+}
+p,
+.list1,
+.list2{
+    color: #000000;
+}
+.summary-description,
+.list1,
+.list2,
+.allExperience,
+.allEducation{
+    margin: 28px 0 49px;
+}
+.grid-contacts,
+.InfoTitle,
+.position{
+    margin-left: 41px;
 }
 .firstEd,
 .secondEd,

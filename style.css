@@ -8,8 +8,7 @@
     margin: 0 auto;
     width: 1200px;
 }
-.profile-name,
-.summary-title{
+.mt58{
     margin-top: 58px;
 }
 .fw600{
@@ -19,6 +18,9 @@
     width: 706px;
     margin-left: 55px;
 }
+.ml41{
+    margin-left: 41px;
+}
 .marg2849{
     margin: 28px 0 49px;
 }
@@ -27,6 +29,7 @@
 }
 p{
     font-size: 14px;
+    color: #000000;
 }
 .wrapper-left{
     position: fixed;
@@ -50,16 +53,6 @@ p{
     border-bottom: 5px solid black;
     padding-bottom: 28px;
 }
-p,
-.list1,
-.list2{
-    color: #000000;
-}
-.grid-contacts,
-.InfoTitle,
-.position{
-    margin-left: 41px;
-}
 .position{
     margin-top: 25px;
     margin-bottom: 25px;
@@ -68,6 +61,7 @@ p,
 .list2{
     display: inline-block;
     margin-right: 50px;
+    color: #000000;
 }
 .profile-name{
     color: white;

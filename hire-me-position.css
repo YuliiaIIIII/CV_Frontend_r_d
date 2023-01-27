@@ -67,7 +67,9 @@ select{
     background: rgb(240, 240, 240) url('../arrow.png') no-repeat center right .75rem;
     background-size: 4%;
 }
-
+.notOption::selection{
+    color: rgba(0, 0, 0, 0.295);
+}
 input:invalid,
 textarea:invalid{
     outline: none;

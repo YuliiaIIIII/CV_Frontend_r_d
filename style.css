@@ -21,6 +21,7 @@
     --font-size-name: 40px;
     --font-size-title: 36px;
     --font-size-infoTitle: 32px;
+    --font-size-titleMobile: 24px;
     --font-size-lang: 20px;
     --font-size-hover: 18px;
     --font-size-summary: 16px;
@@ -169,7 +170,6 @@ a:hover{
     }
     .wrapper-left{
         max-width: 420px;
-        min-width: 300px;
         width: 100%;
         float: none;
         z-index: 1;
@@ -178,13 +178,17 @@ a:hover{
     }
     .wrapper-right{
         max-width: 420px;
-        min-width: 300px;
-        width: 100%;
+        width: 96%;
+        display: block;
         float: none;
         z-index: 1;
-        position: relative;
-        margin: 0 auto;
-        display: block;
+        position: relative;  
+    }
+    .list1{
+        margin: 28px auto 0;
+    }
+    .list2{
+        margin: 0 auto 49px 0;
     }
     .userPhoto{
         max-width: 420px;
@@ -197,7 +201,29 @@ a:hover{
         max-width: 420px;
         min-width: 300px;
         display: inline;
-        
+    }
+    .mt58{
+        margin-top: var(--margin-size-top-small);
+    }
+    .marg2849,
+    .list2{
+        margin-bottom: 20px;
+    }
+    .InfoTitle{
+        font-size: var(--font-size-titleMobile);
+    }
+    .title{
+        font-size: var(--font-size-infoTitle);
+    }
+    .title{
+        padding: 0 20px 28px 20px;
+    }
+    .summary-description,
+    .listDecoration,
+    .allExperience,
+    .allEducation{
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .lorem-text{
         display: none;

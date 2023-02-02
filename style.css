@@ -162,3 +162,37 @@ a:hover{
     font-size: var(--font-size-paragraph);
     line-height: 17px;
 }
+
+@media (max-width: 680px){
+    .general{
+        
+        width: 680px;
+    }
+    .wrapper-left{
+        max-width: 680px;
+        min-width: 300px;
+        width: 100%;
+        float:none;
+        z-index: 1;
+        position:relative;
+        margin: 0 auto;
+        
+    
+        /* height: 100%; */
+        /* overflow-y: scroll; */
+     
+    }
+    .wrapper-right{
+        max-width: 680px;
+        min-width: 300px;
+        width: 100%;
+        float:none;
+        z-index: 1;
+        position:relative;
+        margin: 0 auto;
+
+    }
+    .lorem-text{
+        display: none;
+    }
+} 

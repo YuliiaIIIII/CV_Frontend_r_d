@@ -184,6 +184,16 @@ a:hover{
         z-index: 1;
         position: relative;  
     }
+    .title{
+        max-width: 420px;
+        width: 80%;
+        margin: 0 20px;
+        padding: 0 20px 28px 20px;
+        font-size: var(--font-size-infoTitle);
+    }
+    .contactInfo{
+        margin-bottom: var(--margin-size-bottom-small);
+    }
     .list1{
         margin: 28px auto 0;
     }
@@ -194,10 +204,7 @@ a:hover{
         max-width: 420px;
         min-width: 300px;
     }
-    .summary,
-    .skills,
-    .work-exp,
-    .education{
+    .wml55{
         max-width: 420px;
         min-width: 300px;
         display: inline;
@@ -205,25 +212,21 @@ a:hover{
     .mt58{
         margin-top: var(--margin-size-top-small);
     }
-    .marg2849,
-    .list2{
-        margin-bottom: 20px;
+    .marg2849{
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .InfoTitle{
         font-size: var(--font-size-titleMobile);
     }
-    .title{
-        font-size: var(--font-size-infoTitle);
-    }
-    .title{
-        padding: 0 20px 28px 20px;
-    }
     .summary-description,
-    .listDecoration,
-    .allExperience,
-    .allEducation{
-        padding-left: 20px;
-        padding-right: 20px;
+    .listDecoration{
+        font-size: var(--font-size-paragraph);
+    }
+    .mobile>p{
+        padding-left: 5%;
+        padding-right: 10%;
     }
     .lorem-text{
         display: none;

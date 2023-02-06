@@ -37,7 +37,7 @@ p{
     width: 30%;
     height: 100%;
     overflow-y: scroll;
-    float: left;
+    /* float: left; */
     background-color: #86A3B4;
     border: 1px solid #1E1E1E;
 }

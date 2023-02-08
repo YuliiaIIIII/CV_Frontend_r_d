@@ -175,12 +175,12 @@ a:hover{
     line-height: 17px;
 }
 
-@media (max-width: 420px){
+@media (max-width: 620px){
     .general{
-        width: 420px;
+        width: 620px;
     }
     .wrapper-left{
-        max-width: 420px;
+        max-width: 620px;
         width: 100%;
         float: none;
         z-index: 1;
@@ -188,15 +188,18 @@ a:hover{
         margin: 0 auto;
     }
     .wrapper-right{
-        max-width: 420px;
+        max-width: 620px;
         width: 96%;
         display: block;
         float: none;
         z-index: 1;
         position: relative;  
     }
+    .userPhoto:hover{
+        transform: none;
+    }
     .title{
-        max-width: 420px;
+        max-width: 620px;
         width: 80%;
         margin: 0 20px;
         padding: 0 20px 28px 20px;
@@ -212,11 +215,11 @@ a:hover{
         margin: 0 auto 49px 0;
     }
     .userPhoto{
-        max-width: 420px;
+        max-width: 620px;
         min-width: 300px;
     }
     .wml55{
-        max-width: 420px;
+        max-width: 620px;
         min-width: 300px;
         display: inline;
     }

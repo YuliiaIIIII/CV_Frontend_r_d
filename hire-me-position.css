@@ -12,6 +12,7 @@ body{
     left: calc(50% - 300px);
     width: 600px;
     min-height: 500px;
+    animation: animation 2s linear;
 }
 table,
 th,
@@ -122,4 +123,15 @@ input[type="submit"]:focus{
     outline: none;
     background: rgb(43, 43, 199);
     color: #fff;
+}
+
+@keyframes animation {
+    from{
+        transform: scale(2);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
 }

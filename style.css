@@ -58,7 +58,7 @@ p{
     position: sticky;
     width: 360px;
     /* height: 100vh; */
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     float: left;
     background-color: var(--color-background-sidebar);
     border: 1px solid var(--color-borders);
@@ -67,8 +67,40 @@ p{
 .wrapper-right{
     width: 70%;
     float: right;
+    /* margin-left: 30%; */
     background-color: var(--color-background);
 }
+
+  
+  .wrapper-left {
+    animation: animationEffect 1.5s;
+  }
+  
+  .wrapper-right {
+    animation: animationEffect 1.5s linear;
+    animation-delay: 2s;
+  }
+  
+  @keyframes animationEffect{
+      0%{ 
+        margin-top:100vh;
+      }
+      100%{ 
+        margin-top:0;
+      }
+  }
+  /* @keyframes animationRight{
+    0%{ 
+      margin-top:100vh;
+      visibility: hidden;
+    }
+    100%{ 
+      margin-top:0;
+      visibility: visible;
+    }
+} */
+
+
 .title{
     color: var(--color-text-title);
     font-size: var(--font-size-title);
@@ -113,32 +145,6 @@ img{
     50%  {left:200px; top:100px;}
     100% {left:0px; top:0px;}
 }
-
-  .wrapper-left {
-    flex-basis: 50%;
-
-      height:1000px;
-      animation: expand 1s;
-  }
-  
-  .wrapper-right {
-      flex-basis: 50%;
-
-      height:1000px;
-      animation: expand 1s linear .5s ;
-  }
-  
-  @keyframes expand{
-      0%{ 
-        margin-top:150vh;
-        opacity: 0;
-      }
-      100%{ 
-        margin-top:0;
-        opacity: 1;
-      }
-  }
-
 .profile-position{
     margin-bottom: var(--margin-size-bottom-small);
     font-size: var(--font-size-infoTitle);
@@ -210,7 +216,9 @@ a:hover{
     font-size: var(--font-size-paragraph);
     line-height: 17px;
 }
-
+.education{
+    padding-bottom: 30px;
+}
 @media (max-width: 620px){
     .general{
         width: 620px;

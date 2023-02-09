@@ -101,9 +101,19 @@ img{
     height: 100%;
 }
 .userPhoto:hover{
-    transform: scale(1.7) translate(75px, 50px);
+    transform: scale(1.5) translate(75px, 50px);
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    transition: 4s;
+    position: relative;
+    animation: photoAnimation 4s reverse linear 2;
 }
+  @keyframes photoAnimation {
+    0%  {left:0px; top:0px; rotate: 0;}
+    20%  {left:100px; top:50px;rotate: 30deg;} 
+    50%  {left:200px; top:100px;}
+    100% {left:0px; top:0px;}
+  }
+
 .profile-position{
     margin-bottom: var(--margin-size-bottom-small);
     font-size: var(--font-size-infoTitle);
@@ -165,10 +175,11 @@ a:hover{
     list-style-position: inside;
 }
 .prevJob{
-    opacity: .7;
+    opacity: .5;
 }
 .prevJob:hover{
     opacity: 1;
+    transition: 1.5s;
 }
 .bold-text{
     font-size: var(--font-size-paragraph);
@@ -197,6 +208,7 @@ a:hover{
     }
     .userPhoto:hover{
         transform: none;
+        animation: none;
     }
     .title{
         max-width: 620px;

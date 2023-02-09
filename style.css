@@ -58,7 +58,7 @@ p{
     position: sticky;
     width: 360px;
     /* height: 100vh; */
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     float: left;
     background-color: var(--color-background-sidebar);
     border: 1px solid var(--color-borders);
@@ -105,13 +105,38 @@ img{
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
     transition: 4s;
     position: relative;
-    animation: photoAnimation 4s reverse linear 2;
+    animation: photoAnimation 3s reverse linear;
 }
-  @keyframes photoAnimation {
+@keyframes photoAnimation {
     0%  {left:0px; top:0px; rotate: 0;}
     20%  {left:100px; top:50px;rotate: 30deg;} 
     50%  {left:200px; top:100px;}
     100% {left:0px; top:0px;}
+}
+
+  .wrapper-left {
+    flex-basis: 50%;
+
+      height:1000px;
+      animation: expand 1s;
+  }
+  
+  .wrapper-right {
+      flex-basis: 50%;
+
+      height:1000px;
+      animation: expand 1s linear .5s ;
+  }
+  
+  @keyframes expand{
+      0%{ 
+        margin-top:150vh;
+        opacity: 0;
+      }
+      100%{ 
+        margin-top:0;
+        opacity: 1;
+      }
   }
 
 .profile-position{

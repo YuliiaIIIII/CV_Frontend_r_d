@@ -63,43 +63,28 @@ p{
     background-color: var(--color-background-sidebar);
     border: 1px solid var(--color-borders);
     box-shadow: 10px -5px 12px 2px #00000038;
+    animation: animationEffect 2s linear;
 }
 .wrapper-right{
     width: 70%;
     float: right;
     /* margin-left: 30%; */
     background-color: var(--color-background);
+    visibility: hidden;
+    animation: animationEffect 2s linear .5s;
+    animation-fill-mode: forwards;
 }
 
-  
-  .wrapper-left {
-    animation: animationEffect 1.5s;
-  }
-  
-  .wrapper-right {
-    animation: animationEffect 1.5s linear;
-    animation-delay: 2s;
-  }
-  
-  @keyframes animationEffect{
-      0%{ 
-        margin-top:100vh;
-      }
-      100%{ 
-        margin-top:0;
-      }
-  }
-  /* @keyframes animationRight{
-    0%{ 
-      margin-top:100vh;
-      visibility: hidden;
+@keyframes animationEffect{
+    from{ 
+    margin-top:100vh;
+    visibility: hidden;
     }
-    100%{ 
-      margin-top:0;
-      visibility: visible;
+    to{ 
+    margin-top:0;
+    visibility: visible;
     }
-} */
-
+}
 
 .title{
     color: var(--color-text-title);

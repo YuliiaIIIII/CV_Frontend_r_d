@@ -1,0 +1,237 @@
+@import 'root';
+@import 'my-theme';
+@import 'main-theme';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.general{
+    margin: 0 auto;
+    width: 1200px;
+}
+.mt58{
+    margin-top: $margin-size-top-big;
+}
+div{
+    .fw600{
+        font-weight: $font-weight-text;
+    }
+}
+div{
+    .wml55{
+        width: 706px;
+        margin-left: $margin-left-big;
+    }
+}
+div{
+    .ml41{
+        margin-left: $margin-left-middle;
+    }
+}
+div{
+    h3{
+        margin-left: $margin-left-middle;
+    }
+}
+div{
+    .marg2849{
+        margin: 28px 0 49px;
+    }
+}
+div{
+    p{
+        .marg2849{
+            margin: 28px 0 49px;
+    }
+    }
+}
+div{
+    .mb20{
+        margin-bottom: $margin-size-bottom-small;
+    }
+}
+p{
+    font-size: $font-size-paragraph;
+    color: $color-text-general;
+}
+.wrapper-left{
+    position: sticky;
+    width: 360px;
+    float: left;
+    background-color: $color-background-sidebar;
+    border: 1px solid $color-borders;
+    box-shadow: 10px -5px 12px 2px #00000038;
+    animation: animationEffect 2s linear;
+}
+.wrapper-right{
+    width: 70%;
+    float: right;
+    background-color: $color-background;
+    visibility: hidden;
+    animation: animationEffect 2s linear .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes animationEffect{
+    from{ 
+    margin-top:100vh;
+    visibility: hidden;
+    }
+    to{ 
+    margin-top:0;
+    visibility: visible;
+    }
+}
+.title{
+        color: $color-text-title;
+        font-size: $font-size-title;
+        width: 659px;
+        border-bottom: 5px solid $color-border-black;
+        padding-bottom: $padding-bottom-middle;
+    }
+div{
+    .position{
+        margin-top: $margin-size-top-small;
+        margin-bottom: $margin-size-bottom-middle;
+    }
+}
+div{
+    .list1{
+    display: inline-block;
+    margin-right: $margin-size-right;
+    color: $color-text-general;
+}
+}
+div{
+    .list2{
+    display: inline-block;
+    margin-right: $margin-size-right;
+    color: $color-text-general;
+}
+}
+div{
+    .profile-name{
+        color: $color-profile-firstname;
+        font-size: $font-size-name;
+        padding: 0 0 36px 40px;
+    }
+}
+div{
+    .surname{
+        color: $color-profile-secondname;
+        font-size: $font-size-name;
+    }
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.userPhoto{
+    &:hover{
+        transform: scale(1.5) translate(75px, 50px);
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+        transition: 4s;
+        position: relative;
+        animation: photoAnimation 3s reverse linear;
+    }
+}
+@keyframes photoAnimation {
+    0%  {left:0px; top:0px; rotate: 0;}
+    20%  {left:100px; top:50px;rotate: 30deg;} 
+    50%  {left:200px; top:100px;}
+    100% {left:0px; top:0px;}
+}
+.profile-position{
+    margin-bottom: $margin-size-bottom-small;
+    font-size: $font-size-infoTitle;
+    color: $color-text-general;
+}
+.InfoTitle{
+        width: 289px;
+        font-size: $font-size-infoTitle;
+        line-height: 39px;
+        color: $color-text-additional;
+        border-bottom: 6px solid $color-borders;
+        margin-bottom: $margin-size-bottom-middle;
+        padding-bottom: $padding-bottom-small;
+    }
+div{
+    .contactInfo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 29px 19px;
+        margin-bottom: $margin-size-bottom-big;
+        color: $color-text-general;
+    }
+}
+div{
+    .lang{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 29px;
+        font-size: $font-size-lang;
+        line-height: 24px;
+        row-gap: 15px;
+        color: $color-text-title;
+    }
+}
+.lang{
+    &:nth-child(3){
+        margin-bottom: $margin-size-bottom-small;
+    }
+}
+.blueText{
+    color: $color-email;
+}
+a{
+    &:link{
+        color: $color-link;
+        text-decoration: underline;
+    }
+}
+a{
+    &:visited{
+        color: $color-visited;
+        text-decoration: underline;
+    }
+}
+a{
+    &:hover{
+        color: $color-hover;
+        text-decoration: none;
+        font-size: $font-size-hover;
+    }
+}
+.fs16{
+    p{
+        font-size: $font-size-summary; 
+    }
+}
+.summary-description{
+    font-size: $font-size-summary;
+    line-height: 19px;
+    color: $color-text-additional;
+}
+ul{
+    list-style-position: inside;
+}
+.prevJob{
+    opacity: .5;
+}
+.prevJob{
+    &:hover{
+        opacity: 1;
+        transition: 1.5s;
+    }
+}
+span{
+    .bold-text{
+        font-size: $font-size-paragraph;
+        line-height: 17px;
+    }
+}
+.education{
+    padding-bottom: 30px;
+}

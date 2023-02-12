@@ -1,15 +1,14 @@
-.main-theme {
-   --color-text-general: #f6efe8;
-   --color-text-title: #fdf2e3;
-   --color-text-additional: rgb(239, 247, 247);
-   --color-background: #67767c;
-   --color-background-sidebar: #22333b;
-   --color-link: #ddc5aa;
-   --color-visited: #c29661;
-   --color-hover: #ffd6a4;
-   --color-profile-firstname: #f5e2cc;
-   --color-profile-secondname: #dea96c;
-   --color-borders: #ecd3b9f7;
-   --color-border-black: rgb(208, 206, 206);
-   --color-email: #c29661;
-}
+
+   $color-text-general: #000000;
+   $color-text-title: #1E1E1E;
+   $color-text-additional: #263036;
+   $color-background: white;
+   $color-background-sidebar: #86A3B4;
+   $color-link: #1a31a3;
+   $color-visited: #6b0e96;
+   $color-hover: #424d6f;
+   $color-profile-firstname: white;
+   $color-profile-secondname: #1C2E8C;
+   $color-borders: #1E1E1E;
+   $color-border-black: black;
+   $color-email: #1C2E8C;

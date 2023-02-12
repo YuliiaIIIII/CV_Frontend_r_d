@@ -1,6 +1,15 @@
-// @import 'root';
-// @import './my-theme';
-@import './main-theme';
+
+// @import 'main-theme';
+// @import 'my-theme';
+:root{
+    @import '_root';
+}
+.main-theme {
+    @import "main-theme";
+  }
+.my-theme {
+    @import "my-theme";
+  }
 *{
     box-sizing: border-box;
     margin: 0;

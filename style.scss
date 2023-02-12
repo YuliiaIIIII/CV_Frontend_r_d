@@ -53,8 +53,16 @@ div{
     }
 }
 p{
-    font-size: $font-size-paragraph;
-    color: var(--color-text-general);
+    font : {
+        size: $font-size-paragraph;
+        color: var(--color-text-general);
+    }
+
+}
+
+@mixin blockAnimation ($timeDelay){
+    animation: animationEffect 2.5s linear;
+    animation-delay: $timeDelay;
 }
 .wrapper-left{
     position: sticky;
@@ -63,16 +71,17 @@ p{
     background-color: var(--color-background-sidebar);
     border: 1px solid var(--color-borders);
     box-shadow: 10px -5px 12px 2px #00000038;
-    animation: animationEffect 2s linear;
+    @include blockAnimation(0);
 }
 .wrapper-right{
     width: 70%;
     float: right;
     background-color: var(--color-background);
     visibility: hidden;
-    animation: animationEffect 2s linear .5s;
+    @include blockAnimation(.5s);
     animation-fill-mode: forwards;
 }
+
 @keyframes animationEffect{
     from{ 
     margin-top:100vh;
@@ -92,8 +101,10 @@ p{
     }
 div{
     .position{
-        margin-top: $margin-size-top-small;
-        margin-bottom: $margin-size-bottom-middle;
+        margin : {
+            top: $margin-size-top-small;
+            bottom: $margin-size-bottom-middle;
+        }
     }
 }
 div{

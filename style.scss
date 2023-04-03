@@ -61,7 +61,7 @@ p{
 }
 
 @mixin blockAnimation ($timeDelay){
-    animation: animationEffect 2.5s linear;
+    animation: animationEffect 1.5s linear;
     animation-delay: $timeDelay;
 }
 .wrapper-left{
@@ -141,19 +141,19 @@ img{
 }
 .userPhoto{
     &:hover{
-        transform: scale(1.5) translate(75px, 50px);
+        // transform: scale(1.5) translate(75px, 50px);
         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
         transition: 4s;
         position: relative;
-        animation: photoAnimation 3s reverse linear;
+        // animation: photoAnimation 3s reverse linear;
     }
 }
-@keyframes photoAnimation {
-    0%  {left:0px; top:0px; rotate: 0;}
-    20%  {left:100px; top:50px;rotate: 30deg;} 
-    50%  {left:200px; top:100px;}
-    100% {left:0px; top:0px;}
-}
+// @keyframes photoAnimation {
+//     0%  {left:0px; top:0px; rotate: 0;}
+//     20%  {left:100px; top:50px;rotate: 30deg;} 
+//     50%  {left:200px; top:100px;}
+//     100% {left:0px; top:0px;}
+// }
 .profile-position{
     margin-bottom: $margin-size-bottom-small;
     font-size: $font-size-infoTitle;

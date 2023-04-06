@@ -61,7 +61,7 @@ p{
 }
 .letter {
     border-radius: 3px;
-    border: 1px solid #000;
+    border: 1px solid var(--color-text-general);
     padding: 5px;
   }
 @mixin blockAnimation ($timeDelay){
@@ -146,6 +146,8 @@ img{
 .userPhoto{
         box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
         position: relative;
+        transition: transform .2s linear;
+        cursor: pointer;
 }
 .transformPhotoSize{
     transform: scale(1.5) translate(100px, 50px);

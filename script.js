@@ -21,4 +21,8 @@ document.addEventListener('keydown', function (event){
         const element = document.querySelector("#letterE");
         element.scrollIntoView(true);
     }
+    else if (event.key == 'm' || event.key == 'M' ) {
+        const element = document.querySelector("#letterM");
+        element.scrollIntoView(true);
+    }
 });

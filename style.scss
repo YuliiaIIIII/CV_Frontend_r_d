@@ -62,10 +62,10 @@ p{
 .letter {
     border-radius: 3px;
     border: 1px solid var(--color-text-general);
-    padding: 5px;
+    padding: 2px 6px;
   }
 @mixin blockAnimation ($timeDelay){
-    animation: animationEffect 1.5s linear;
+    animation: animationEffect 0s linear;
     animation-delay: $timeDelay;
 }
 .wrapper-left{
@@ -240,7 +240,4 @@ span{
         font-size: $font-size-paragraph;
         line-height: 17px;
     }
-}
-.education{
-    padding-bottom: 30px;
 }

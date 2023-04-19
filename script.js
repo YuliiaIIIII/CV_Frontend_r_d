@@ -28,33 +28,28 @@ document.addEventListener('keydown', function (event){
     }
 });
 
-/////////////
-
 async function fetchAllRepositories() {
 
-    const allRepos = await fetch(`https://api.github.com/users/YuliiaIIIII/repos?_limit=1`)
+    const allRepos = await fetch(`https://api.github.com/users/YuliiaIIIII/repos`)
     const repos = await allRepos.json();
-    console.log(repos)
     repos.forEach(item => {
         function addRepository (){
             let li = document.createElement('li');
-            li.innerHTML = `${item.full_name}, ${item.html_url}`;
-                if(item.description !== false){
-                    let li2 = document.createElement('li');
-                    li2.innerHTML = `${item.description}`;
-                    reposList.appendChild(li2);
-                    console.log(111);
-                }else{
-                    let li2 = document.createElement('li');
-                    li2.innerHTML = "";
-                    reposList.appendChild(li2);
-                }
-            
+            li.innerHTML = `<a href="${item.html_url}">${item.full_name}</a>`;
+            li.setAttribute('class','fw600');
             reposList.appendChild(li);
-            
-        }
+                if(item.description){
+                    let p = document.createElement('p');
+                    p.innerHTML = `${item.description}`;
+                    p.setAttribute('style','margin-bottom: 10px; padding-left: 22px');
+                    reposList.appendChild(p);
+                }else{
+                    let p = document.createElement('p');
+                    p.innerHTML = "";
+                    reposList.appendChild(p);
+                }
+            }
         addRepository ();
-    console.log(item.full_name)
     })
 }
-fetchAllRepositories()
+fetchAllRepositories();

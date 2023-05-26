@@ -28,28 +28,47 @@ document.addEventListener('keydown', function (event){
     }
 });
 
-async function fetchAllRepositories() {
+class GitRepositories {
+    constructor(token, userName) {
+        this.token = token;
+        this.userName = userName;
+    }
+    async getRepos(){
+        const headers = {
+            Authorization: `Bearer ${this.token}`
+        };
+        try{
+            const response = await fetch(`https://api.github.com/users/${this.userName}/repos`, { headers });
+            const data = await response.json();
+            return data;
+        }catch (error) {
+            console.error('Error fetching repositories:', error);
+        }
 
-    const allRepos = await fetch(`https://api.github.com/users/YuliiaIIIII/repos`)
-    const repos = await allRepos.json();
-    repos.forEach(item => {
-        function addRepository (){
-            let li = document.createElement('li');
-            li.innerHTML = `<a href="${item.html_url}">${item.full_name}</a>`;
-            li.setAttribute('class','fw600');
-            reposList.appendChild(li);
-                if(item.description){
-                    let p = document.createElement('p');
-                    p.innerHTML = `${item.description}`;
-                    p.setAttribute('style','margin-bottom: 10px; padding-left: 22px');
-                    reposList.appendChild(p);
-                }else{
-                    let p = document.createElement('p');
-                    p.innerHTML = "";
-                    reposList.appendChild(p);
-                }
-            }
-        addRepository ();
-    })
+    }
 }
-fetchAllRepositories();
+
+document.addEventListener('DOMContentLoaded', async function () {
+const apiRequest = new GitRepositories( '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' ,'YuliiaIIIII');
+
+    const repos = await apiRequest.getRepos();
+    repos.forEach(item => {
+        let li = document.createElement('li');
+        let a = document.createElement('a');
+        a.href = item.html_url;
+        a.textContent = item.full_name;
+        li.appendChild(a);
+        li.setAttribute('class', 'fw600');
+        reposList.appendChild(li);
+            if(item.description){
+                let p = document.createElement('p');
+                p.textContent  = `${item.description}`;
+                p.setAttribute('style','margin-bottom: 10px; padding-left: 22px');
+                reposList.appendChild(p);
+            }else{
+                let p = document.createElement('p');
+                p.textContent  = "";
+                reposList.appendChild(p);
+            }
+    })
+})

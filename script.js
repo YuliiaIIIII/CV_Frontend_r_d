@@ -48,7 +48,7 @@ class GitRepositories {
 }
 
 //значення токена
-let token = ''
+let token = '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'
 
 document.addEventListener('DOMContentLoaded', async function () {
     const apiRequest = new GitRepositories( token ,'YuliiaIIIII');

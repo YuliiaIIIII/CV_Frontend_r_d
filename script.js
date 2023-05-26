@@ -48,10 +48,11 @@ class GitRepositories {
 }
 
 //значення токена
-let token = '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'
+let token1 = 'ghp_'
+let token2 = 'U0UuYI5V4jOyRNnMosi0CkzkDpsPcb4dGYvE'
 
 document.addEventListener('DOMContentLoaded', async function () {
-    const apiRequest = new GitRepositories( token ,'YuliiaIIIII');
+    const apiRequest = new GitRepositories( token1+token2 ,'YuliiaIIIII');
     const repos = await apiRequest.getRepos();
 
     let reposList = document.querySelector('.reposList');

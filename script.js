@@ -1,6 +1,4 @@
 let transform = document.querySelector('.userPhoto');
-let reposList = document.querySelector('.reposList');
-
 transform.addEventListener('click',() => {
 	transform.classList.toggle('transformPhotoSize');
 });
@@ -43,15 +41,20 @@ class GitRepositories {
             return data;
         }catch (error) {
             console.error('Error fetching repositories:', error);
+            return;
         }
 
     }
 }
 
-document.addEventListener('DOMContentLoaded', async function () {
-const apiRequest = new GitRepositories( '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' ,'YuliiaIIIII');
+//значення токена
+let token = ''
 
+document.addEventListener('DOMContentLoaded', async function () {
+    const apiRequest = new GitRepositories( token ,'YuliiaIIIII');
     const repos = await apiRequest.getRepos();
+
+    let reposList = document.querySelector('.reposList');
     repos.forEach(item => {
         let li = document.createElement('li');
         let a = document.createElement('a');
@@ -67,7 +70,7 @@ const apiRequest = new GitRepositories( 'ghp_ZEfdg6u1tytenAh1NiBUJOD3kCU65x1UMqb
                 reposList.appendChild(p);
             }else{
                 let p = document.createElement('p');
-                p.textContent  = "";
+                p.textContent = '';
                 reposList.appendChild(p);
             }
     })

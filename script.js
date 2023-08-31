@@ -49,7 +49,7 @@ class GitRepositories {
 
 //значення токена
 let token1 = 'ghp_'
-let token2 = 'U0UuYI5V4jOyRNnMosi0CkzkDpsPcb4dGYvE'
+let token2 = 'jzeqsTaoUZoozdy8lIBXY0jx8hTnkm3skuiZ'
 
 document.addEventListener('DOMContentLoaded', async function () {
     const apiRequest = new GitRepositories( token1+token2 ,'YuliiaIIIII');

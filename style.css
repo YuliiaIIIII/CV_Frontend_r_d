@@ -76,7 +76,7 @@ div .mb20 {
 }
 
 p {
-  font-size: 14px;
+  font-size: var(--font-size-paragraph);
   color: var(--color-text-general);
 }
 
@@ -242,6 +242,9 @@ ul {
   list-style-position: inside;
 }
 
+.typeNone {
+  list-style-type: none;
+}
 .prevJob {
   opacity: 0.5;
 }
@@ -252,6 +255,6 @@ ul {
 }
 
 span .bold-text {
-  font-size: 14px;
+  font-size: var(--font-size-paragraph);
   line-height: 17px;
-}/*# sourceMappingURL=style.css.map */
+}

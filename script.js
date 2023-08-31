@@ -52,7 +52,7 @@ let token1 = 'ghp_'
 let token2 = 'jzeqsTaoUZoozdy8lIBXY0jx8hTnkm3skuiZ'
 
 document.addEventListener('DOMContentLoaded', async function () {
-    const apiRequest = new GitRepositories( token1+token2 ,'YuliiaIIIII');
+    const apiRequest = new GitRepositories( token1 + token2 ,'YuliiaIIIII');
     const repos = await apiRequest.getRepos();
 
     let reposList = document.querySelector('.reposList');

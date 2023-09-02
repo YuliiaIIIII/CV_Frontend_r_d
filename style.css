@@ -83,7 +83,7 @@ p {
 .letter {
   border-radius: 3px;
   border: 1px solid var(--color-text-general);
-  padding: 1px 5px;
+  padding: 0px 3px;
 }
 
 .wrapper-left {
@@ -193,7 +193,9 @@ div .contactInfo {
   margin-bottom: 36px;
   color: var(--color-text-general);
 }
-
+div .languages {
+  margin-bottom: 50px;
+}
 div .lang {
   display: grid;
   grid-template-columns: 1fr;
@@ -240,6 +242,7 @@ a:hover {
 
 ul {
   list-style-position: inside;
+  color: var(--color-text-general);
 }
 
 .typeNone {

@@ -186,6 +186,9 @@ div{
         color: var(--color-text-title);
     }
 }
+.languages{
+    margin-bottom: 50px;
+}
 .lang{
     &:nth-child(3){
         margin-bottom: $margin-size-bottom-small;
@@ -225,9 +228,6 @@ a{
 }
 ul{
     list-style-position: inside;
-}
-li{
-    margin-bottom: 4px;
 }
 .prevJob{
     opacity: .5;
